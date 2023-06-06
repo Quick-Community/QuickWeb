@@ -17,7 +17,7 @@ public class Data {
     }
 
     public static String getHostname() {
-        return Server.getInstance().getConfig().getConfiguration().getString("webinterface.hostname", "cp.ree6.de");
+        return Server.getInstance().getConfig().getConfiguration().getString("webinterface.hostname", "app.quickfirecorp.ru");
     }
 
     public static  String getHostUrl() {
@@ -26,7 +26,7 @@ public class Data {
     }
 
     // Current Domain of the Website.
-    public static final String WEBSITE = "https://ree6.de";
+    public static final String WEBSITE = "https://app.quickfirecorp.ru";
 
     // Advertisement, because of Sponsors.
     public static final String ADVERTISEMENT = "powered by Tube-Hosting";
