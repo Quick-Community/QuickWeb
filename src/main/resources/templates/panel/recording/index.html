@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Quick-Community/site/main/styles/style.css" />
-    <link rel="icon" href="https://raw.githubusercontent.com/Quick-Community/site/main/imgs/logo.png" />
+    <link rel="stylesheet" href="https://cdn.quickfirecorp.ru/web/styles/style.css" />
+    <link rel="icon" href="https://cdn.quickfirecorp.ru/web/imgs/logo.png" />
     <title>REE6 | Recording</title>
     <style>
         footer {
@@ -170,9 +170,9 @@
             >
                 <!-- INSERT SERVER IMAGE PATH IN IMG SRC -->
                 <img
-                        th:src="${guild.getIconUrl() != null ? guild.getIconUrl() : 'https://raw.githubusercontent.com/Quick-Community/site/main/serverlogo/base.svg'}"
+                        th:src="${guild.getIconUrl() != null ? guild.getIconUrl() : 'https://cdn.quickfirecorp.ru/web/serverlogo/base.svg'}"
                         th:alt="${guild.getName()} + 'Server Logo'"
-                        src="https://raw.githubusercontent.com/Quick-Community/site/main/serverlogo/base.svg"
+                        src="https://cdn.quickfirecorp.ru/web/serverlogo/base.svg"
                         alt="Server Logo" />
             </div>
         </div>
@@ -183,9 +183,9 @@
                 class="img-container"
         >
             <img
-                    th:src="${guild.getIconUrl() != null ? guild.getIconUrl() : 'https://raw.githubusercontent.com/Quick-Community/site/main/serverlogo/base.svg'}"
+                    th:src="${guild.getIconUrl() != null ? guild.getIconUrl() : 'https://cdn.quickfirecorp.ru/web/serverlogo/base.svg'}"
                     th:alt="${guild.getName()} + 'Server Logo'"
-                    src="https://raw.githubusercontent.com/Quick-Community/site/main/serverlogo/base.svg"
+                    src="https://cdn.quickfirecorp.ru/web/serverlogo/base.svg"
                     alt="Server Logo" />
         </div>
     </section>
@@ -195,7 +195,7 @@
                 <div class="leaderboard-stats">
                     <h2>Please mind that your recording has been deleted from our Server!<br>Which means this is the only time you can download it!</h2>
                     <br>
-                    <audio id="recording" controls autoplay loop style="align-self: center" src="https://utils.raw.githubusercontent.com/Quick-Community/site/main/placeholder/placeholder.mp3">WAV Audio not supported by browser!</audio>
+                    <audio id="recording" controls autoplay loop style="align-self: center" src="https://utils.cdn.quickfirecorp.ru/web/placeholder/placeholder.mp3">WAV Audio not supported by browser!</audio>
                 </div>
             </div>
         </div>
@@ -221,15 +221,15 @@
         </div>
         <div class="nav-list">
             <strong>Legal</strong>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/privacy/">Privacy Policy</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/impressum/">Impressum</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/protection/">Data Protection</a>
+            <a href="https://cdn.quickfirecorp.ru/web/privacy/">Privacy Policy</a>
+            <a href="https://cdn.quickfirecorp.ru/web/impressum/">Impressum</a>
+            <a href="https://cdn.quickfirecorp.ru/web/protection/">Data Protection</a>
             <button
-                    data-copy="legal@raw.githubusercontent.com/Quick-Community/site/main"
+                    data-copy="legal@cdn.quickfirecorp.ru/web"
                     data-color-background="#ef2222"
                     data-color-dot="#fff"
             >
-                legal@raw.githubusercontent.com/Quick-Community/site/main
+                legal@cdn.quickfirecorp.ru/web
             </button>
         </div>
         <div class="nav-list">
@@ -253,11 +253,11 @@
             >Github</a
             >
             <button
-                    data-copy="support@raw.githubusercontent.com/Quick-Community/site/main"
+                    data-copy="support@cdn.quickfirecorp.ru/web"
                     data-color-background="#ef2222"
                     data-color-dot="#fff"
             >
-                support@raw.githubusercontent.com/Quick-Community/site/main
+                support@cdn.quickfirecorp.ru/web
             </button>
         </div>
     </div>
@@ -278,10 +278,10 @@
         >
         ©Ree6 <span data-time="0"></span>
     </div>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/time.js"></script>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/navigation.js"></script>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/cursor.js"></script>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/percent.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/time.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/navigation.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/cursor.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/percent.js"></script>
     <script>
         const recordingAsBase64 = "[[${recording}]]";
         const byteCharacters = atob(recordingAsBase64);

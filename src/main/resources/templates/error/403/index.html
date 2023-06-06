@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Quick-Community/site/main/styles/style.css" />
-    <link rel="icon" href="https://raw.githubusercontent.com/Quick-Community/site/main/imgs/logo.png" />
+    <link rel="stylesheet" href="https://cdn.quickfirecorp.ru/web/styles/style.css" />
+    <link rel="icon" href="https://cdn.quickfirecorp.ru/web/imgs/logo.png" />
     <title>REE6 | Access Denied</title>
     <style>
         footer {
@@ -52,12 +52,12 @@
 <div class="cursor-modal"></div>
 <header>
     <nav class="desktop-nav">
-        <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#home">Home</a>
-        <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#features">Features</a>
-        <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#team">Team</a>
-        <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#invite">Invite</a>
-        <a th:if="${isLogged}" th:ref="@{'/panel'}" href="https://cp.raw.githubusercontent.com/Quick-Community/site/main/panel">Dashboard</a>
-        <a th:unless="${isLogged}" th:ref="@{'/discord/auth'}" href="https://cp.raw.githubusercontent.com/Quick-Community/site/main/discord/auth">Login</a>
+        <a href="https://cdn.quickfirecorp.ru/web/home">Home</a>
+        <a href="https://cdn.quickfirecorp.ru/web/features">Features</a>
+        <a href="https://cdn.quickfirecorp.ru/web/team">Team</a>
+        <a href="https://cdn.quickfirecorp.ru/web/invite">Invite</a>
+        <a th:if="${isLogged}" th:ref="@{'/panel'}" href="https://cp.cdn.quickfirecorp.ru/web/panel">Dashboard</a>
+        <a th:unless="${isLogged}" th:ref="@{'/discord/auth'}" href="https://cp.cdn.quickfirecorp.ru/web/discord/auth">Login</a>
     </nav>
     <button class="hamburger-button">
         <span class="line-one"></span>
@@ -65,12 +65,12 @@
     </button>
     <nav class="hamburger-wrapper">
         <div class="hamburger-container">
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#home"><span>Home</span></a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#features"><span>Features</span></a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#team"><span>Team</span></a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#invite"><span>Invite</span></a>
-            <a th:if="${isLogged}" th:ref="@{'/panel'}" href="https://cp.raw.githubusercontent.com/Quick-Community/site/main/panel"><span>Dashboard</span></a>
-            <a th:unless="${isLogged}" th:ref="@{'/discord/auth'}" href="https://cp.raw.githubusercontent.com/Quick-Community/site/main/discord/auth"><span>Login</span></a>
+            <a href="https://cdn.quickfirecorp.ru/web/home"><span>Home</span></a>
+            <a href="https://cdn.quickfirecorp.ru/web/features"><span>Features</span></a>
+            <a href="https://cdn.quickfirecorp.ru/web/team"><span>Team</span></a>
+            <a href="https://cdn.quickfirecorp.ru/web/invite"><span>Invite</span></a>
+            <a th:if="${isLogged}" th:ref="@{'/panel'}" href="https://cp.cdn.quickfirecorp.ru/web/panel"><span>Dashboard</span></a>
+            <a th:unless="${isLogged}" th:ref="@{'/discord/auth'}" href="https://cp.cdn.quickfirecorp.ru/web/discord/auth"><span>Login</span></a>
         </div>
     </nav>
 </header>
@@ -89,7 +89,7 @@
                 Access <strong>Denied</strong>
                 <p th:if="${errorMessage != null}" th:text="${errorMessage}">Message</p>
             </div>
-            <a th:href="@{'/'}" href="https://cp.raw.githubusercontent.com/Quick-Community/site/main" data-highlight="" class="hero-cta"
+            <a th:href="@{'/'}" href="https://cp.cdn.quickfirecorp.ru/web/ data-highlight="" class="hero-cta"
             >Ree6 Respawn</a
             >
         </div>
@@ -105,13 +105,13 @@
     <div class="footer-nav">
         <div class="nav-list">
             <strong>Navigation</strong>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#home">Home</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#features">Features</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/#team">Team</a>
+            <a href="https://cdn.quickfirecorp.ru/web/home">Home</a>
+            <a href="https://cdn.quickfirecorp.ru/web/features">Features</a>
+            <a href="https://cdn.quickfirecorp.ru/web/team">Team</a>
             <a
                     data-color-background="#5865F2"
                     data-color-dot="#fff"
-                    href="https://invite.raw.githubusercontent.com/Quick-Community/site/main"
+                    href="https://invite.cdn.quickfirecorp.ru/web/
                     target="_blank"
                     rel="noopener noreferrer"
             >Invite</a
@@ -119,21 +119,20 @@
         </div>
         <div class="nav-list">
             <strong>Legal</strong>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/privacy/">Privacy Policy</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/impressum/">Impressum</a>
-            <a href="https://raw.githubusercontent.com/Quick-Community/site/main/protection/">Data Protection</a>
+            <a href="https://cdn.quickfirecorp.ru/web/privacy/">Privacy Policy</a>
+            <a href="https://cdn.quickfirecorp.ru/web/impressum/">Impressum</a>
+            <a href="https://cdn.quickfirecorp.ru/web/protection/">Data Protection</a>
             <button
-                    data-copy="legal@raw.githubusercontent.com/Quick-Community/site/main"
+                    data-copy="legal@cdn.quickfirecorp.ru/web/
                     data-color-background="#ef2222"
                     data-color-dot="#fff"
             >
-                legal@raw.githubusercontent.com/Quick-Community/site/main
-            </button>
+                legal@cdn.quickfirecorp.ru/web/            </button>
         </div>
         <div class="nav-list">
             <strong>Contact</strong>
             <a
-                    href="https://support.raw.githubusercontent.com/Quick-Community/site/main"
+                    href="https://support.cdn.quickfirecorp.ru/web/
                     target="_blank"
                     rel="noopener noreferrer"
             >Discord</a
@@ -151,12 +150,11 @@
             >Github</a
             >
             <button
-                    data-copy="support@raw.githubusercontent.com/Quick-Community/site/main"
+                    data-copy="support@cdn.quickfirecorp.ru/web/
                     data-color-background="#ef2222"
                     data-color-dot="#fff"
             >
-                support@raw.githubusercontent.com/Quick-Community/site/main
-            </button>
+                support@cdn.quickfirecorp.ru/web/            </button>
         </div>
     </div>
     <div class="copyright">
@@ -176,9 +174,9 @@
         >
         ©Ree6 <span data-time="0"></span>
     </div>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/time.js"></script>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/navigation.js"></script>
-    <script src="https://raw.githubusercontent.com/Quick-Community/site/main/js/cursor.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/time.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/navigation.js"></script>
+    <script src="https://cdn.quickfirecorp.ru/web/js/cursor.js"></script>
 </footer>
 </body>
 </html>
