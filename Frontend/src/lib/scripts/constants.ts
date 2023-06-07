@@ -1,4 +1,4 @@
-export const BASE_PATH = "http://localhost:8888"
+export const BASE_PATH = "http://172.18.0.13:8888"
 
 export function get(path: string) {
 
