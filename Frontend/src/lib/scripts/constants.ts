@@ -1,4 +1,4 @@
-export const BASE_PATH = "http://bot.quickfirecorp.ru"
+export const BASE_PATH = "https://bot.quickfirecorp.ru"
 
 export function get(path: string) {
 
