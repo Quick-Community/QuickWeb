@@ -1,4 +1,4 @@
-export const BASE_PATH = "http://192.168.1.140:8888"
+export const BASE_PATH = "http://bot.quickfirecorp.ru"
 
 export function get(path: string) {
 
