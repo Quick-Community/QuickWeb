@@ -3,7 +3,6 @@
     import LoadingIndicator from "$lib/components/loadingIndicator.svelte";
     import { servers, serversLoading, type Server, currentServer } from "$lib/scripts/servers";
 
-
     function selectServer(server: Server) {
         goto("/dash/" + server.id + "/stats")
         currentServer.set(server)
@@ -11,7 +10,7 @@
 
 </script>
 
-<h1 class="headline">Pick a server to configure </h1>
+<h1 class="headline">Pick a server to configure</h1>
 
 <div class="servers">
 
@@ -31,7 +30,7 @@
 
         {:else}
 
-        <div class="button clickable">
+        <div on:click={() => location.assign("https://invite.ree6.de")} on:keydown class="button clickable">
             <span class="material-icons icon-primary">launch</span>
             <p>Setup</p>
         </div>

@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
 
     import Sidebar from "./sidebar.svelte";
-    import { currentServer, loadServers, servers, type Server, serversLoading } from "$lib/scripts/servers";
+    import { currentServer, loadServers, servers, serversLoading } from "$lib/scripts/servers";
     import { page } from "$app/stores";
     import { fade } from "svelte/transition";
     import { goto } from "$app/navigation";
@@ -39,6 +39,7 @@
     {#if !$serversLoading}
     <div in:fade class="content">
         <slot />
+        <div class="spacer"></div>
     </div>
     {/if}
 </div>
@@ -55,7 +56,12 @@
 
     .content {
         width: 100%;
-        height: calc(100% - 4rem);
+        height: 100%;
+        overflow-y: scroll;
         padding: 0rem 2rem;
+
+        .spacer {
+            margin-bottom: 2rem;
+        }
     }
 </style>
